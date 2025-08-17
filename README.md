@@ -139,6 +139,33 @@ npm run build
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+## Development Approach
+
+### Component Design
+- **TypeScript First**: Strong typing for all components and props
+- **Composition**: Components built with composition in mind
+- **Accessibility**: ARIA attributes and keyboard navigation support
+- **Responsive**: Mobile-first approach with Tailwind CSS
+- **Theming**: Support for light/dark modes using CSS variables
+
+### Key Decisions
+1. **State Management**: Used React hooks for local state management
+2. **Styling**: Tailwind CSS for utility-first styling with custom theme configuration
+3. **Testing**: Jest and React Testing Library for unit tests
+4. **Documentation**: Storybook for component documentation and visual testing
+5. **Build Tool**: Vite for fast development and production builds
+
+### Folder Structure
+```
+src/
+  components/       # Reusable UI components
+  lib/             # Utility functions
+  stories/         # Storybook stories
+  test-utils.tsx   # Testing utilities
+  App.tsx          # Main app component
+  main.tsx         # App entry point
+```
+
 ## License
 
 Distributed under the MIT License.
