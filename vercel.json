@@ -14,7 +14,8 @@
   "build": {
     "env": {
       "NODE_ENV": "production",
-      "NODE_OPTIONS": "--max-old-space-size=4096"
+      "NODE_OPTIONS": "--max-old-space-size=4096",
+      "STORYBOOK_DISABLE_TELEMETRY": "true"
     }
   },
   "routes": [
@@ -22,8 +23,5 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ],
-  "env": {
-    "NODE_ENV": "production"
-  }
+  ]
 }
