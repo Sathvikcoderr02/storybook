@@ -9,10 +9,10 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "build-storybook": "storybook build -o storybook-static",
     "test": "jest",
     "test:watch": "jest --watch",
-    "vercel-build": "npm install @storybook/cli && npm run build-storybook"
+    "vercel-build": "npm install @storybook/react @storybook/builder-vite @storybook/manager-webpack5 @storybook/addon-essentials && npm run build-storybook"
   },
   "dependencies": {
     "clsx": "^2.1.1",
