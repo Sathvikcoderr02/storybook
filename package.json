@@ -8,11 +8,11 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "storybook": "npx storybook dev -p 6006",
-    "build-storybook": "npx storybook build -o storybook-static",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build -o storybook-static",
     "test": "jest",
     "test:watch": "jest --watch",
-    "vercel-build": "npm install --legacy-peer-deps && npm run build-storybook"
+    "vercel-build": "npm install --legacy-peer-deps && npm install @storybook/builder-vite @storybook/manager-vite && npm run build-storybook"
   },
   "dependencies": {
     "clsx": "^2.1.1",
