@@ -5,10 +5,16 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "storybook-static"
+        "distDir": "storybook-static",
+        "forceInstall": true
       }
     }
   ],
+  "build": {
+    "env": {
+      "NODE_ENV": "production"
+    }
+  },
   "routes": [
     {
       "src": "/(.*)",
