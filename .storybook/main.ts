@@ -8,26 +8,15 @@ const config: StorybookConfig = {
   addons: [
     "@storybook/addon-essentials",
     "@storybook/addon-links",
-    "@storybook/addon-interactions",
-    "@storybook/addon-onboarding"
+    "@storybook/addon-interactions"
   ],
   framework: {
     name: "@storybook/react-vite",
-    options: {
-      strictMode: true
-    }
-  },
-  core: {
-    disableTelemetry: true,
-    builder: '@storybook/builder-vite'
-  },
-  features: {
-    storyStoreV7: true,
+    options: {}
   },
   docs: {
-    autodocs: 'tag',
-  },
-  staticDirs: ['../public']
+    autodocs: 'tag'
+  }
 };
 
 export default config;
