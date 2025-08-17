@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light theme - Vibrant Colors */
+    --background: 0 0% 100%;
+    --foreground: 240 10% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 10%;
+    /* Primary - Vibrant Blue */
+    --primary: 221 83% 60%;
+    --primary-foreground: 210 40% 98%;
+    /* Secondary - Vibrant Purple */
+    --secondary: 262 83% 60%;
+    --secondary-foreground: 210 40% 98%;
+    /* Accent - Vibrant Teal */
+    --accent: 173 80% 40%;
+    --accent-foreground: 210 40% 98%;
+    /* Destructive - Vibrant Red */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    /* Muted Colors */
+    --muted: 210 20% 97%;
+    --muted-foreground: 240 4% 46%;
+    /* UI Colors */
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 221 83% 60%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Dark theme - Vibrant Colors */
+    --background: 240 10% 8%;
+    --foreground: 210 20% 98%;
+    --card: 240 10% 8%;
+    --card-foreground: 210 20% 98%;
+    --popover: 240 10% 8%;
+    --popover-foreground: 210 20% 98%;
+    /* Primary - Brighter Blue */
+    --primary: 217 91% 65%;
+    --primary-foreground: 222 47% 11%;
+    /* Secondary - Brighter Purple */
+    --secondary: 262 83% 70%;
+    --secondary-foreground: 210 40% 98%;
+    /* Accent - Brighter Teal */
+    --accent: 173 80% 50%;
+    --accent-foreground: 222 47% 11%;
+    /* Destructive - Brighter Red */
+    --destructive: 0 84% 65%;
+    --destructive-foreground: 210 40% 98%;
+    /* Muted Colors */
+    --muted: 240 6% 15%;
+    --muted-foreground: 240 5% 65%;
+    /* UI Colors */
+    --border: 240 6% 20%;
+    --input: 240 6% 20%;
+    --ring: 217 91% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
