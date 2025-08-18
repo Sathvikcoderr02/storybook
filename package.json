@@ -12,7 +12,8 @@
     "build-storybook": "npx storybook build -o storybook-static",
     "test": "jest",
     "test:watch": "jest --watch",
-    "vercel-build": "npm install --legacy-peer-deps && npm run build-storybook"
+    "vercel-build": "npm install --legacy-peer-deps && npm run build-storybook",
+    "chromatic": "npx chromatic --project-token=chpt_ccae8d153eed552"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -21,16 +22,15 @@
     "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
-    "@mdx-js/react": "^2.3.0",
     "@storybook/addon-essentials": "^7.6.17",
     "@storybook/addon-interactions": "^7.6.17",
     "@storybook/addon-links": "^7.6.17",
-    "@storybook/addon-mdx-gfm": "^7.6.17",
+    "@storybook/addon-onboarding": "^1.0.8",
     "@storybook/blocks": "^7.6.17",
-    "@storybook/builder-vite": "^7.6.17",
     "@storybook/react": "^7.6.17",
     "@storybook/react-vite": "^7.6.17",
     "@storybook/test-runner": "^0.23.0",
+    "@storybook/testing-library": "^0.2.2",
     "@testing-library/jest-dom": "^6.7.0",
     "@testing-library/react": "^14.3.1",
     "@testing-library/user-event": "^14.6.1",
